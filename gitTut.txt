@@ -34,6 +34,13 @@
 
 . git commit -m "<new comment>" --amend
   amends the new comment to previous commit
+  
+. git commit ...  --date=format:relative:x.unit.ago
+  sneaky way of not getting in trouble
+  
+. git push -u origin main
+  to be used after git branch -M main
+  push to "main"
 
 . git diff
   prints modifications to tracked files
@@ -75,6 +82,9 @@
   
 . git branch -d <branchname>
   deletes branch
+  
+. git branch -M main
+  main branch is "main"
   
 . git switch <branchname>
   switches branch
