@@ -87,6 +87,12 @@ Commit your changes with a descriptive message:
 git commit -m "<your commit message>"
 ```
 
+Reset the tracking list after changing the .gitignore file:
+
+```bash
+git rm -r --cached .
+```
+
 Skip the staging area and commit all tracked changes:
 
 ```bash
