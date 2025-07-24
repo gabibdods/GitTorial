@@ -1,6 +1,6 @@
 # Git Tutorial
 
-Welcome to this comprehensive Git tutorial! This README will guide you through essential and advanced Git commands, with helpful tips, examples, and best practices. Let’s get started! 🎉
+Welcome to this comprehensive Git tutorial! This README will guide you through essential and advanced Git commands, with helpful tips, examples, and best practices. Let’s get started!
 
 ---
 
@@ -331,7 +331,27 @@ git remote -v
 
 ---
 
-## 11. Bonus Tips & Trivia
+## 11. Initializing a Repository Inside Another One
+
+This is a called a submodule and can be initialized:
+
+```
+git submodule add <repository-url>
+```
+
+> **Notice:** It is important to push the submodule before pushing the repository!
+
+If your .gitignore structure ignores everything, add `-f` to the command:
+
+```
+git submodule add -f <repository-url>
+```
+
+> **Warning:** Don't forget to add the new link to the .gitignore after!
+
+---
+
+## 12. Bonus Tips & Trivia
 
 🌟 Use Git hooks (in `.git/hooks/`) to automate tasks like running tests before a commit.
 🌟 Explore Git GUI tools like GitKraken, Sourcetree, or VS Code’s Git integration!
@@ -343,7 +363,7 @@ git remote -v
 ### 🎉 Conclusion
 
 This tutorial covers the essentials and some advanced Git commands to get you started.
-Feel free to experiment, explore, and commit responsibly! 🚀
+Feel free to experiment, explore, and commit responsibly!
 
 ---
 
@@ -351,5 +371,5 @@ Feel free to experiment, explore, and commit responsibly! 🚀
 
 ```
 
-Let me know if you’d like to tweak the structure, add advanced sections (like rebasing workflows, squashing, etc.), or include diagrams or images to make it even more visual. 🚀
+Let me know if you’d like to tweak the structure, add advanced sections (like rebasing workflows, squashing, etc.), or include diagrams or images to make it even more visual.
 ```
