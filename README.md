@@ -349,6 +349,16 @@ git submodule add -f <repository-url>
 
 > **Warning:** Don't forget to add the new link to the .gitignore after!
 
+To remove a submodule:
+
+```
+git submodule deinit <path/to/submodule>
+git rm <path/to/submodule>
+rm -rf .git/modules/<name_of_submodule>
+```
+
+> **Warning:** Don't forget to add the new link to the .gitignore after!
+
 ---
 
 ## 12. Bonus Tips & Trivia
